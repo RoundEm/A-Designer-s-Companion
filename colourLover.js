@@ -1,4 +1,4 @@
-const COLOR = {
+const Color = {
 	COLOUR_LOVER_URL: 'http://www.colourlovers.com/api/palettes?',
 	getDataFromApi: function(hex, callback) {
 		// do I need this?
@@ -10,11 +10,11 @@ const COLOR = {
 			numResults: 1,
 			format: 'json',
 		}
-		$.getJSON(COLOR.COLOUR_LOVER_URL, query, callback);
+		$.getJSON(Color.COLOUR_LOVER_URL, query, callback);
 	},
 	findApiData: function() {
 		$('.submitBtnColor').click(function() {
-			getDataFromApi(undefined, COLOR.collectApiData);	
+			getDataFromApi(undefined, Color.collectApiData);	
 		});
 	},
 	collectApiData: function(data) {
@@ -24,10 +24,10 @@ const COLOR = {
 		randomNumberGenerator(apiDataLength);
 	},
 	setup: function() {
-		COLOR.findApiData();	
+		Color.findApiData();	
 	},
 }
-$(COLOR.setup);
+$(Color.setup);
 
 
 // function randomNumberGenerator(length) {
