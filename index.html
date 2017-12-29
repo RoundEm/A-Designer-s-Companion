@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>API Capstone</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+</head>
+<body>
+	<main role="main">
+		<header role="banner">
+			<h1>A Designer's Companion</h1>
+			<h2>Frequently Used Tools for Lazy (e.g. Smart) Web &amp Print Designers</h2>
+		</header>
+		<div class="mainContainer">
+			<section class="font">
+				<div class="sectionContainer">	
+					<h3>Font Generator</h3>
+					<p>Click Submit to retrieve a randomly selected font from Google's excellent collection of free fonts. Uncheck any boxes below to filter out that font type. Hover over the font type to see a description and example.</p>
+					<form>
+						<fieldset>
+							<div class="itemContainer">
+								<label name="serif">Serif</label>	
+								<input type="checkbox" name="fontCat" id="serif" value="serif" checked>
+							</div>
+							<div class="itemContainer">
+								<label name="sans-serif">Sans-Serif</label>	
+								<input type="checkbox" name="fontCat" id="sans-serif" value="sans-serif" checked>
+							</div>
+							<div class="itemContainer">
+								<label name="display">Display</label>	
+								<input type="checkbox" name="fontCat" id="display" value="display" checked>
+							</div>
+							<div class="itemContainer">
+								<label name="handwriting">Handwriting</label>	
+								<input type="checkbox" name="fontCat" id="handwriting" value="handwriting" checked>
+							</div>
+							<div class="itemContainer">
+								<label name="monospace">Monospace</label>
+								<input type="checkbox" name="fontCat" id="monospace" value="monospace" checked>
+							</div>
+						</fieldset>
+					</form>
+					<button class="submitBtnFont">Submit</button>
+				</div>
+			</section>
+
+			<section class="color">
+				<div class="sectionContainer">	
+					<h3>Color Pallette Generator</h3>
+					<p>Click submit to generate a random color palette from coulorLovers.com. You can also enter up to 3 colors of your own to return palettes that include each of those colors, and more.</p>
+					<form>
+						<fieldset>
+							<legend></legend>
+								<div class="itemContainer">
+									<label>Color 1</label>
+									<input type="color" name="" value='#ffffff'>
+								</div>
+								<div class="itemContainer">
+									<label>Color 2</label>
+									<input type="color" name="" value='#ffffff'>
+								</div>
+								<div class="itemContainer">
+									<label>Color 3</label>
+									<input type="color" name="" value='#ffffff'>
+								</div>
+						</fieldset>
+					</form>
+					<button class="submitBtnColor">Submit</button>
+				</div>
+			</section>
+
+			<section class="loremIpsum">
+				<div class="sectionContainer">	
+					<h3>Lorem Ipsum Generator</h3>
+					<form> 
+						<fieldset>
+							<legend></legend>
+								<label name="ipsumWordCount">Number of words to return:</label>
+								<input type="text" name="wordCount" id="ipsumWordCount">
+						</fieldset>
+					</form>	
+					<button class="submitBtnIpsum">Submit</button>
+				</div>
+			</section>
+
+			<section class="imagePlaceholder">
+				<div class="sectionContainer">
+					<h3>Image Placeholder Generator</h3>
+					
+				</div>
+			</section>
+				
+		</div>	
+	</main>
+	<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+  	</script>
+  	<script type="text/javascript" src="googleFonts.js"></script>
+</body>
+</html>

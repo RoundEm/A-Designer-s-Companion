@@ -1,0 +1,61 @@
+body {
+	font-family: 'Nixie One', cursive;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 1.75em;
+}
+main {
+	font-size: 1em;
+}
+header {
+	text-align: center;
+	background-color: #cdcdcd;
+	padding: 10px;
+}
+section:nth-of-type(even) {
+	background-color: #FCF3F7;
+}
+section:nth-of-type(odd) {
+	background-color: #E9F7F6;
+}
+div.sectionContainer {
+	text-align: center;
+}	
+div.itemContainer {
+	display: inline-block;
+	padding: 0 15px;
+}
+h1 {
+	margin: 5px 0 5px;
+}
+h2 {
+	font-size: .8em;
+	margin: 0;
+}
+h3 {
+	padding: 20px 0 5px;
+	margin: 0;	
+}
+p {
+	font-size: .85em;
+	text-align: center;
+	width: 65%;
+	margin: 0 auto 7px;
+}
+fieldset {
+	border: none;
+	padding: 0;
+
+}
+input[type='checkbox'] {
+	width: 25px;
+	height: 15px;
+}
+button {
+	padding: 7px;
+	margin: 17px 0;
+	font-family: 'Nixie One', cursive;
+	font-size: .65em;
+	border-radius: 5px;
+}
