@@ -30,8 +30,10 @@ h1 {
 	margin: 5px 0 5px;
 }
 h2 {
-	font-size: .8em;
-	margin: 0;
+	font-size: .7em;
+	margin: 0 auto;
+	width: 75%;
+	text-align: center;
 }
 h3 {
 	padding: 20px 0 5px;
@@ -46,11 +48,17 @@ p {
 fieldset {
 	border: none;
 	padding: 0;
-
 }
 input[type='checkbox'] {
 	width: 25px;
 	height: 15px;
+}
+input[type='text'], input[type='number'] {
+	height: 30px;
+	width: 100px;
+	font-size: .7em;
+	font-family: 'Nixie One', cursive;
+	padding: 5px;
 }
 button {
 	padding: 7px;
